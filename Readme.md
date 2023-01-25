@@ -1,13 +1,13 @@
 ## Generate a private key using OpenSSL
 
 ```
-openssl genrsa -aes128 -out trend_private.pem 1024
+openssl genrsa -aes128 -out private_key.pem 1024
 ```
 
 ## Generate public key for the private key
 
 ```
-openssl rsa -in trend_private.pem -pubout > trend_public.pem
+openssl rsa -in private_key.pem -pubout > public_key.pem
 ```
 
 ## Run the script to decrypt a encrypted string
